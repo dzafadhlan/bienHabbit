@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1009881406484",
+    "project_id": "bienhabbits",
+    "firebase_url": "https://bienhabbits-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "storage_bucket": "bienhabbits.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009881406484:android:d760794886311b7a331b01",
+        "android_client_info": {
+          "package_name": "com.example.bienhabbits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009881406484-50s3e7mufu8e5mqvqe6s5nvvq7hrime9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeeMAi2u6jeoJX91ZVUQwcV2PXMw9g7d4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009881406484-50s3e7mufu8e5mqvqe6s5nvvq7hrime9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

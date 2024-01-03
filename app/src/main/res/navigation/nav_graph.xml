@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bienhabbits.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_masukFragment2"
+            app:destination="@id/masukFragment2"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/masukFragment2"
+        android:name="com.example.bienhabbits.fragment.MasukFragment"
+        android:label="fragment_masuk"
+        tools:layout="@layout/fragment_masuk" >
+        <action
+            android:id="@+id/action_masukFragment2_to_daftarFragment"
+            app:destination="@id/daftarFragment"
+            app:popUpTo="@id/masukFragment2"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_masukFragment2_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/masukFragment2"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarFragment"
+        android:name="com.example.bienhabbits.fragment.DaftarFragment"
+        android:label="fragment_daftar"
+        tools:layout="@layout/fragment_daftar" >
+        <action
+            android:id="@+id/action_daftarFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/daftarFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_daftarFragment_to_masukFragment2"
+            app:destination="@id/masukFragment2"
+            app:popUpTo="@id/daftarFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bienhabbits.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_homeFagment_to_masukFragment2"
+            app:destination="@id/masukFragment2"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_habbitFragment2"
+            app:destination="@id/habbitFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.bienhabbits.fragment.timerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer"
+        app:popUpTo="@id/timerFragment"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_timerFragment_to_masukFragment2"
+            app:destination="@id/masukFragment2"
+            app:popUpTo="@id/timerFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_timerFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.bienhabbits.fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/habbitFragment2"
+        android:name="com.example.bienhabbits.fragment.habbitFragment"
+        android:label="fragment_habbit"
+        tools:layout="@layout/fragment_habbit" >
+        <action
+            android:id="@+id/action_habbitFragment2_to_timerFragment"
+            app:destination="@id/timerFragment" />
+    </fragment>
+</navigation>

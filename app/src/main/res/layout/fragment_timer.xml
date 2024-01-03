@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/time_view"
+        android:text="@string/_00_00_00"
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"
+        />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            >
+            <ImageButton
+                android:id="@+id/play_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_play_arrow_24"
+                android:background="@color/abu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="80dp"
+                />
+            <ImageButton
+                android:id="@+id/reset_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_restart_alt_24"
+                android:background="@color/abu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="70dp"
+                />
+            <ImageButton
+                android:id="@+id/save_btn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@color/abu"
+                android:src="@drawable/baseline_save_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/reset_btn"
+                app:layout_constraintStart_toEndOf="@+id/play_btn"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_timer"
+        android:background="@color/abu"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+</LinearLayout>

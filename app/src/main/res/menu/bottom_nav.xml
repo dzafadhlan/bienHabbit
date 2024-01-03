@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Todo-List"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_task_alt_24"
+        />
+    <item android:title="Habbits"
+        android:id="@+id/habbitFragment2"
+        android:icon="@drawable/baseline_addchart_24"/>
+    <item android:title="Timer"
+        android:id="@+id/timerFragment"
+        android:icon="@drawable/baseline_timer_24"/>
+    <item android:title="Account"
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/baseline_person_outline_24"/>
+
+
+</menu>

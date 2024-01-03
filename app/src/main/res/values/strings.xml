@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BienHabbits</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_search" />
+    <string name="menu_settings" />
+    <string name="menu_navigation" />
+    <string name="timer">00:00:00</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="Stop">Stop</string>
+    <string name="_00_00_00">00:00:00</string>
+</resources>
